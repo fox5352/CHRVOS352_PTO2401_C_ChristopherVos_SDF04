@@ -1,0 +1,85 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* colors and fonts */
+:root {
+    --fg-one: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    --fg-color: #ffe4c4;
+    --bg-color: #4d81e0;
+
+    --ac-one: #065e03;
+    --ac-two: #daa520;
+
+    --ac-shadow: #055b0263;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    font-size: 1rem;
+    color: var(--fg-color);
+    font-family: var(--fg-one);
+
+    background-color: var(--bg-color);
+}
+
+.board {
+    /* sets to take 40% width from 250px to 500px */
+    width: 40%;
+    min-width: 250px;
+    max-width: 400px;
+
+    padding: 12px;
+
+    border-radius: 6px;
+    border: 2px solid var(--ac-two);
+    background-color: var(--ac-one);
+    box-shadow: 0px 4px 3px  var(--ac-shadow),  3px 0px 3px var(--ac-shadow);
+}
+.board>* {
+    width: 80%;
+
+    margin: 0 auto;
+}
+.stats {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 4px auto;
+}
+
+.table {
+    margin: 6px auto;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 6px;
+    margin: 10px auto 4px;
+
+    border-radius: 3px;
+    border: 1px solid goldenrod;
+}
+
+.controls button {
+    padding: 4px;
+    margin: 3px;
+
+    border: none;
+    border-radius: 4px;
+    background-color: var(--ac-two);
+    box-shadow: 2px 2px 3px black;
+}
+.controls button:hover {
+    box-shadow: 3px 3px 5px black;
+}
